@@ -1,0 +1,367 @@
+﻿{
+    "behaviors": [
+        {
+            "id": "CoinInit",
+            "event": "OnCondition",
+            "actors": [
+                "Floor"
+            ],
+            "precondition": {
+                "equals": [
+                    "Self.state",
+                    "pre_spawned"
+                ]
+            },
+            "action": {
+                "runAlgorithm": "InitCoins",
+                "params": {
+                    "obj": "Self"
+                }
+            }
+        },
+        {
+            "id": "CoinSpawner",
+            "event": "OnCondition",
+            "actors": [
+                "Floor"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "ready"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsSpawnTime"
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "SpawnNextCoin",
+                "params": {
+                    "obj": "Self"
+                }
+            }
+        },
+        {
+            "id": "StreetLightToggle",
+            "event": "OnCondition",
+            "actors": [
+                "StreetLight_L"
+            ],
+            "precondition": {
+                "runAlgorithm": "IsObjectClicked",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "action": {
+                "runAlgorithm": "ToggleLight",
+                "params": {
+                    "obj": "Self"
+                }
+            }
+        },
+        {
+            "id": "BallDragStart",
+            "event": "OnCondition",
+            "actors": [
+                "Ball_1"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "any": [
+                            {
+                                "equals": [
+                                    "Self.state",
+                                    "resting"
+                                ]
+                            },
+                            {
+                                "equals": [
+                                    "Self.state",
+                                    "bouncing"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsDragInitiated",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "StartDrag",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "dragging"
+                ]
+            }
+        },
+        {
+            "id": "BallDragRelease",
+            "event": "OnCondition",
+            "actors": [
+                "Ball_1"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "dragging"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsDragReleased",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "ApplyDrag",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "bouncing"
+                ]
+            }
+        },
+        {
+            "id": "BallLand",
+            "event": "OnCondition",
+            "actors": [
+                "Ball_1"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "bouncing"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsBallAtRest",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "SetBallResting",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "resting"
+                ]
+            }
+        },
+        {
+            "id": "CoinCollect",
+            "event": "OnCondition",
+            "actors": [
+                "Coin_1"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "active"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsObjectClicked",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "CollectCoin",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "collected"
+                ]
+            }
+        },
+        {
+            "id": "GateOpen",
+            "event": "OnCondition",
+            "actors": [
+                "Gate"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "locked"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "HasEnoughCoins"
+                    },
+                    {
+                        "runAlgorithm": "IsObjectClicked",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "OpenGate",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "unlocked"
+                ]
+            }
+        },
+        {
+            "id": "GateClose",
+            "event": "OnCondition",
+            "actors": [
+                "Gate"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "unlocked"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsObjectClicked",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "CloseGate",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "locked"
+                ]
+            }
+        },
+        {
+            "id": "ButtonPress",
+            "event": "OnCondition",
+            "actors": [
+                "Button_1"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "idle"
+                        ]
+                    },
+                    {
+                        "equals": [
+                            "Gate.state",
+                            "unlocked"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsObjectClicked",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "PressButton",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "pressed"
+                ]
+            }
+        },
+        {
+            "id": "ButtonReset",
+            "event": "OnCondition",
+            "actors": [
+                "Button_1"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "pressed"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsButtonTimedOut",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "ResetButton",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "idle"
+                ]
+            }
+        }
+    ]
+}

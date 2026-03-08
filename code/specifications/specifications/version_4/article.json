@@ -1,0 +1,1131 @@
+{
+  "articles": [
+    {
+      "_objectname": "Floor",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "0",
+        "z": "4.5"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "20",
+        "y": "0.1",
+        "z": "31"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "WallLeft",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "-10.1",
+        "y": "2",
+        "z": "4.5"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.2",
+        "y": "4",
+        "z": "31"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "WallRight",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "10.1",
+        "y": "2",
+        "z": "4.5"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.2",
+        "y": "4",
+        "z": "31"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "WallFront",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "2",
+        "z": "-11"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "20.4",
+        "y": "4",
+        "z": "0.2"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "StreetLight_L",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "-8",
+        "y": "2",
+        "z": "18"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.3",
+        "y": "2",
+        "z": "0.3"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "off",
+        "on"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "StreetLight_R",
+      "_sid": null,
+      "_slabel": null,
+      "source": "StreetLight_L",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "8",
+        "y": "2",
+        "z": "18"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.3",
+        "y": "2",
+        "z": "0.3"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Ball_1",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Sphere",
+      "Transform_initialpos": {
+        "x": "-2",
+        "y": "0.55",
+        "z": "10"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "1",
+        "y": "1",
+        "z": "1"
+      },
+      "XRRigidObject": {
+        "value": "1",
+        "mass": "1",
+        "dragfriction": "0",
+        "angulardrag": "0.05",
+        "Isgravityenable": "true",
+        "IsKinematic": "false",
+        "CanInterpolate": "1",
+        "CollisionPolling": "continuous"
+      },
+      "states": [
+        "resting",
+        "bouncing"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Ball_2",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Ball_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Sphere",
+      "Transform_initialpos": {
+        "x": "2",
+        "y": "0.55",
+        "z": "10"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "1",
+        "y": "1",
+        "z": "1"
+      },
+      "XRRigidObject": {
+        "value": "1",
+        "mass": "1",
+        "dragfriction": "0",
+        "angulardrag": "0.05",
+        "Isgravityenable": "true",
+        "IsKinematic": "false",
+        "CanInterpolate": "1",
+        "CollisionPolling": "continuous"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Coin_1",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "-6",
+        "y": "0.2",
+        "z": "3"
+      },
+      "Transform_initialrotation": {
+        "x": "90",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.4",
+        "y": "0.05",
+        "z": "0.4"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "active",
+        "collected"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Coin_2",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Coin_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "5",
+        "y": "0.2",
+        "z": "3"
+      },
+      "Transform_initialrotation": {
+        "x": "90",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.4",
+        "y": "0.05",
+        "z": "0.4"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Coin_3",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Coin_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "-3",
+        "y": "0.2",
+        "z": "5"
+      },
+      "Transform_initialrotation": {
+        "x": "90",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.4",
+        "y": "0.05",
+        "z": "0.4"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Coin_4",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Coin_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "6",
+        "y": "0.2",
+        "z": "7"
+      },
+      "Transform_initialrotation": {
+        "x": "90",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.4",
+        "y": "0.05",
+        "z": "0.4"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Coin_5",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Coin_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "-7",
+        "y": "0.2",
+        "z": "8"
+      },
+      "Transform_initialrotation": {
+        "x": "90",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.4",
+        "y": "0.05",
+        "z": "0.4"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Coin_6",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Coin_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "4",
+        "y": "0.2",
+        "z": "9"
+      },
+      "Transform_initialrotation": {
+        "x": "90",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.4",
+        "y": "0.05",
+        "z": "0.4"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Coin_7",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Coin_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "-1",
+        "y": "0.2",
+        "z": "12"
+      },
+      "Transform_initialrotation": {
+        "x": "90",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.4",
+        "y": "0.05",
+        "z": "0.4"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Coin_8",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Coin_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "-5",
+        "y": "0.2",
+        "z": "14"
+      },
+      "Transform_initialrotation": {
+        "x": "90",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.4",
+        "y": "0.05",
+        "z": "0.4"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Coin_9",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Coin_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "7",
+        "y": "0.2",
+        "z": "15"
+      },
+      "Transform_initialrotation": {
+        "x": "90",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.4",
+        "y": "0.05",
+        "z": "0.4"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Coin10",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Coin_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "-2",
+        "y": "0.2",
+        "z": "17"
+      },
+      "Transform_initialrotation": {
+        "x": "90",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.4",
+        "y": "0.05",
+        "z": "0.4"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "WallGapL",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "-7.55",
+        "y": "1.5",
+        "z": "20"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "5.1",
+        "y": "3",
+        "z": "0.2"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "WallGapR",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "7.55",
+        "y": "1.5",
+        "z": "20"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "5.1",
+        "y": "3",
+        "z": "0.2"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Gate",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "1.5",
+        "z": "20"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "10",
+        "y": "3",
+        "z": "0.2"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "locked",
+        "unlocked"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "RestrictedFloor",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "0",
+        "z": "23"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "10",
+        "y": "0.1",
+        "z": "6"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "RestrictedWallBack",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "1.5",
+        "z": "26.1"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "10",
+        "y": "3",
+        "z": "0.2"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "RestrictedWallLeft",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "-5.1",
+        "y": "1.5",
+        "z": "23"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.2",
+        "y": "3",
+        "z": "6"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "RestrictedWallRight",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "5.1",
+        "y": "1.5",
+        "z": "23"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.2",
+        "y": "3",
+        "z": "6"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Button_1",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "-3",
+        "y": "0.35",
+        "z": "23"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.5",
+        "y": "0.3",
+        "z": "0.5"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "idle",
+        "pressed"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Button_2",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Button_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "0.35",
+        "z": "23"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.5",
+        "y": "0.3",
+        "z": "0.5"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Button_3",
+      "_sid": null,
+      "_slabel": null,
+      "source": "Button_1",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "3",
+        "y": "0.35",
+        "z": "23"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.5",
+        "y": "0.3",
+        "z": "0.5"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    }
+  ]
+}

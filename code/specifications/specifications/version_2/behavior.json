@@ -1,0 +1,201 @@
+{
+    "behaviors": [
+        {
+            "id": "StreetLightToggle",
+            "event": "OnCondition",
+            "actors": [
+                "StreetLight_L"
+            ],
+            "precondition": {
+                "runAlgorithm": "IsObjectClicked",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "action": {
+                "runAlgorithm": "ToggleLight",
+                "params": {
+                    "obj": "Self"
+                }
+            }
+        },
+        {
+            "id": "BallBounce",
+            "event": "OnCondition",
+            "actors": [
+                "Ball_1"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "resting"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsObjectClicked",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "BounceBall",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "bouncing"
+                ]
+            }
+        },
+        {
+            "id": "BallLand",
+            "event": "OnCondition",
+            "actors": [
+                "Ball_1"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "bouncing"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsBallAtRest",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "SetBallResting",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "resting"
+                ]
+            }
+        },
+        {
+            "id": "CoinCollect",
+            "event": "OnCondition",
+            "actors": [
+                "Coin_1"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "active"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsObjectClicked",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "CollectCoin",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "collected"
+                ]
+            }
+        },
+        {
+            "id": "GateUnlock",
+            "event": "OnCondition",
+            "actors": [
+                "Gate"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "locked"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "HasCollectedAllCoins"
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "OpenGate",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "unlocked"
+                ]
+            }
+        },
+        {
+            "id": "ButtonPress",
+            "event": "OnCondition",
+            "actors": [
+                "Button_1"
+            ],
+            "precondition": {
+                "all": [
+                    {
+                        "equals": [
+                            "Self.state",
+                            "idle"
+                        ]
+                    },
+                    {
+                        "equals": [
+                            "Gate.state",
+                            "unlocked"
+                        ]
+                    },
+                    {
+                        "runAlgorithm": "IsObjectClicked",
+                        "params": {
+                            "obj": "Self"
+                        }
+                    }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "PressButton",
+                "params": {
+                    "obj": "Self"
+                }
+            },
+            "postcondition": {
+                "equals": [
+                    "Self.state",
+                    "pressed"
+                ]
+            }
+        }
+    ]
+}
